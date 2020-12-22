@@ -10,7 +10,9 @@ use Magento\Framework\App\ActionInterface;
 
 abstract class Eacore extends Action implements ActionInterface
 {
-    public const ADMIN_RESOURCE_VIEW = 'Eadesigndev_Eacore::index';
+    /* remove 'public' to support older PHP version */
+    /*public*/ const ADMIN_RESOURCE_VIEW = 'Eadesigndev_Eacore::index';
+
 
     public function __construct(Context $context)
     {
